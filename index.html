@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="style/all.min.css"/>
+		<link rel="stylesheet" href="style/normalize.css"/>
+		<link rel="stylesheet" href="style/main-style.css"/>
+		<title>E-commerce</title>
+	</head>
+   <body>
+      <div class="container">
+         <nav>
+            <a class="logo" href="#">sneakers</a>
+            <a href="#">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">About</a>
+            <a href="#">Conact</a>
+            <div class="right">
+               <!-- <a href="#"><img src="imgs/icon-cart.svg" alt="avatar" /></a> -->
+               <a href="#"><i class="fa light fa-cart-shopping"></i></a>
+               <a class="avatar" href="#"><img src="imgs/avatar.png" alt="avatar" /></a>
+            </div>
+         </nav>
+         <div class="info">
+            <div class="images">
+               <div class="slide-show" id="slide-show">
+                  <img id="slide" src="imgs/product-1.jpg" alt="slide one" />
+               </div>
+               <ul class="main-ul">
+                  <li><img src="imgs/product-1.jpg" alt="slide One" /></li>
+                  <li><img src="imgs/product-2.jpg" alt="slide Tow" /></li>
+                  <li><img src="imgs/product-3.jpg" alt="slide Three" /></li>
+                  <li><img src="imgs/product-4.jpg" alt="slide Four" /></li>
+               </ul>
+            </div>
+            <div class="text">
+               <h5>SNEAKERS COMPANY</h5>
+               <h3>Fall Limmited Edition sneakers</h3>
+               <p>Thes low-profile sneakers are your perfect casul wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+               <div class="price" ><span>$</span><h4 id="total-price">125.00</h4><span>50%</span></div>
+               <span class="discount">%250.00</span>
+               <div class="cart">
+                  <div class="counter">
+                     <span id="minus">-</span>
+                     <span id="total-paices">0</span>
+                     <span id="plus">+</span>
+                  </div>
+                  <a href="#"><i class="fa light fa-cart-shopping"></i>Add to cart</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="overleay">
+         <span id="closer">X</span>
+         <div class="control">
+            <i id="prev-btn" class="fas fa-angle-left change-background fa-2x left disabled"></i>
+            <i id="next-btn" class="fas fa-angle-right change-background fa-2x right"></i>
+         </div>
+         <div class="images">
+               <div class="slide-flow" id="slide-flow">
+                  <img id="img-flow" src="imgs/product-4.jpg" alt="slide one" />
+                  <img id="img-flow" src="imgs/product-3.jpg" alt="slide Tow" />
+                  <img id="img-flow" src="imgs/product-2.jpg" alt="slide Three" />
+                  <img id="img-flow" src="imgs/product-1.jpg" alt="slide Four" />
+               </div>
+               <ul class="flow-ul">
+                  <li class="active"><img src="imgs/product-4.jpg" alt="slide One" /></li>
+                  <li><span class="back-overleay"></span><img src="imgs/product-3.jpg" alt="product Tow" /></li>
+                  <li><span class="back-overleay"></span><img src="imgs/product-2.jpg" alt="product Three" /></li>
+                  <li><span class="back-overleay"></span><img src="imgs/product-1.jpg" alt="product Four" /></li>
+               </ul>
+         </div>
+      </div>
+      <script src="js/main-js.js"></script>
+   </body>
+</html>
