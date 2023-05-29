@@ -108,8 +108,22 @@ function removeActive() {
    })
 }
 document.addEventListener("click", (e)=> {
-   console.log();
+   // console.log(e.target);
 })
+
+// nav for mobile screen
+let toggleBtn = document.querySelector(".toggle-menu");
+let hiddenUl = document.querySelector(".hidden-ul");
+
+
+toggleBtn.onclick = function(e) {
+   if (hiddenUl.hasAttribute("airra-hidden","false")) {
+      hiddenUl.setAttribute("airra-hidden","true")
+   } if (toggleBtn.classList.contains("open")) {
+      hiddenUl.setAttribute("airra-hidden","false");
+   }
+   toggleBtn.classList.toggle("open");
+}
 
 console.log();
 console.log();

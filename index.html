@@ -6,20 +6,34 @@
 		<link rel="stylesheet" href="style/all.min.css"/>
 		<link rel="stylesheet" href="style/normalize.css"/>
 		<link rel="stylesheet" href="style/main-style.css"/>
-		<title>E-commerce</title>
+		<link rel="stylesheet" href="style/media.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+		<title>Sneakers E-commerce</title>
 	</head>
    <body>
       <div class="container">
          <nav>
-            <a class="logo" href="#">sneakers</a>
-            <a href="#">Collections</a>
-            <a href="#">Men</a>
-            <a href="#">About</a>
-            <a href="#">Conact</a>
-            <div class="right">
-               <a href="#"><i class="fa light fa-cart-shopping"></i></a>
-               <a class="avatar" href="#"><img src="imgs/avatar.png" alt="avatar" /></a>
-            </div>
+            <ul class="main">
+               <button class="toggle-menu">
+                  <span class="closer"></span>
+                  <span></span>
+                  <span class="closer"></span>
+               </button>
+               <li><a class="logo" href="#">sneakers</a></li>
+               <div class="hidden-ul" airra-hidden="false">
+                  <ul>
+                     <li><a href="#">Collections</a></li>
+                     <li><a href="#">Men</a></li>
+                     <li><a href="#">Women</a></li>
+                     <li><a href="#">About</a></li>
+                     <li><a href="#">Contact</a></li>
+                  </ul>
+               </div>
+               <ul class="right"> 
+                  <li><a class="cart" href="#"><i class="fa light fa-cart-shopping"></i></a></li>
+                  <li><a class="avatar" href="#"><img src="imgs/avatar.png" alt="avatar" /></a></li>
+               </ul>
+            </ul>
          </nav>
          <div class="info">
             <div class="images">
@@ -35,10 +49,16 @@
             </div>
             <div class="text">
                <h5>SNEAKERS COMPANY</h5>
-               <h3>Fall Limmited Edition sneakers</h3>
+               <h3>Fall Limmited Edition Sneakers</h3>
                <p>Thes low-profile sneakers are your perfect casul wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
-               <div class="price" ><span>$</span><h4 id="total-price">125.00</h4><span>50%</span></div>
-               <span class="discount">%250.00</span>
+               <div class="price" >
+                  <section>
+                     <span>$</span>
+                     <h4 id="total-price">125.00</h4>
+                     <span>50%</span>
+                  </section>
+                  <span class="discount">%250.00</span>
+               </div>
                <div class="cart">
                   <div class="counter">
                      <span id="minus">-</span>
