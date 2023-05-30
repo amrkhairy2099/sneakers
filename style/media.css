@@ -1,4 +1,4 @@
-@media(max-width: 950px) {
+@media(max-width: 1030px) {
    .container{
       padding: 0; 
    }
@@ -19,10 +19,13 @@
       display: none; 
    }
    nav {
-      padding: 10px 25px;
+      padding: 0 25px;
       border: none;
       margin: 0;
       gap: 20px; 
+   }
+   nav ul li {
+      padding: 10px 0;
    }
    nav .toggle-menu {
       display: flex;
@@ -44,7 +47,15 @@
       width: 50%;
    }
    nav .hidden-ul li {
-      padding: 18px 30px;
+      padding: 10px 30px;
+   }
+   hidden-ul li a {
+      color: #000;
+      font-weight: bold;
+      font-size: 18px;
+   }
+   nav .hidden-ul li:hover:after{
+      width: 0;
    }
    nav .avatar img {
       width: 30px;
@@ -56,10 +67,6 @@
    .info .text .price {
       display: flex;
       justify-content: space-between;
-   }
-   .info .text .cart {
-      display: flex;
-      flex-direction: column;
    }
    .overleay {
       height: 56vh;
@@ -86,10 +93,18 @@
    .overleay .control {
       width: 95%;
    }
+   nav .cart .cart-box {
+      right: -55px;
+   }
+   nav .cart .info-cart {
+      display: block;
+   }
+   nav .cart .cart-box p {
+      display: none;
+   }
 }
-@media(max-width: 590px) {
-   nav .hidden-ul ul {
-      width: 100%;
-      text-align: center;
+@media(max-width: 1110px) {
+   .info .text .cart {
+      flex-direction: column;
    }
 }

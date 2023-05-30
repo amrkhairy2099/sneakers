@@ -43,7 +43,7 @@ function minusBtn() {
       plus.classList.remove("disabled");
    }
 }
-// Over Leay
+// Overleay
 let overleay = document.querySelector(".overleay");
 let slideFlow = document.getElementById("slide-flow");
 let closer = document.getElementById("closer");
@@ -56,7 +56,7 @@ closer.onclick = function(e) {
    overleay.classList.remove("open");
 }
 
-// overleay controls 
+// Overleay controls 
 let nextBtn = document.getElementById("next-btn");
 let prevBtn = document.getElementById("prev-btn");
 
@@ -107,14 +107,10 @@ function removeActive() {
       li.classList.remove("active");
    })
 }
-document.addEventListener("click", (e)=> {
-   // console.log(e.target);
-})
 
-// nav for mobile screen
+// nav for smalle screen
 let toggleBtn = document.querySelector(".toggle-menu");
 let hiddenUl = document.querySelector(".hidden-ul");
-
 
 toggleBtn.onclick = function(e) {
    if (hiddenUl.hasAttribute("airra-hidden","false")) {
@@ -124,9 +120,5 @@ toggleBtn.onclick = function(e) {
    }
    toggleBtn.classList.toggle("open");
 }
-
-console.log();
-console.log();
-
 
 
