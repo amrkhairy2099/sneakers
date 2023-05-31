@@ -1,6 +1,5 @@
 let lis = document.querySelectorAll(".main-ul li");
 let slideShow = document.getElementById("slide-show");
-
 lis.forEach((li) => {
    li.addEventListener("click", (e)=> {
       lis.forEach((li) => {
@@ -15,11 +14,9 @@ let plus = document.getElementById("plus");
 let minus = document.getElementById("minus");
 let totalPaices = document.getElementById("total-paices");
 let totalPrice = document.getElementById("total-price");
-
 let i = 0;
 plus.onclick = plusBtn;
 minus.onclick = minusBtn;
-
 function plusBtn(){
    if (totalPaices.innerText === "10") {
          plus.classList.add("disabled");
@@ -31,7 +28,6 @@ function plusBtn(){
       minus.classList.remove("disabled");
    }
 }
-
 function minusBtn() {
    if(totalPaices.innerText === "0") {
       minus.classList.add("disabled");
@@ -45,7 +41,6 @@ function minusBtn() {
 }
 // Overleay
 let overleay = document.querySelector(".overleay");
-let slideFlow = document.getElementById("slide-flow");
 let closer = document.getElementById("closer");
 
 slideShow.onclick = function(e) {
@@ -56,7 +51,7 @@ closer.onclick = function(e) {
    overleay.classList.remove("open");
 }
 
-// Overleay controls 
+// Overleay Controls 
 let nextBtn = document.getElementById("next-btn");
 let prevBtn = document.getElementById("prev-btn");
 
@@ -99,6 +94,7 @@ function addNext() {
       nextBtn.classList.remove("disabled");
    }
 }
+
 function removeActive() {
 	imgsArray.forEach(function (img) {
 		img.classList.remove("next");
@@ -107,7 +103,6 @@ function removeActive() {
       li.classList.remove("active");
    })
 }
-
 // nav for smalle screen
 let toggleBtn = document.querySelector(".toggle-menu");
 let hiddenUl = document.querySelector(".hidden-ul");
